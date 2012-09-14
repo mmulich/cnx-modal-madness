@@ -4,5 +4,8 @@ define(function (require) {
     // like:
     // var util = require('./util');
 
-    console.log('Hello world');
+    var $ = require('jquery');
+    require('btstrp/bootstrap-dropdown');
+    require('btstrp/bootstrap-modal');
+    $('.dropdown-toggle').dropdown();
 });
