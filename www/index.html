@@ -1,9 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script data-main="js/app" src="js/lib/require.js"></script>
-    </head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Connexions Authoring Services</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href="js/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="js/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+
+  <!-- No other javascript imports are allowed here. -->
+  <script data-main="js/app" src="js/lib/require.js"></script>
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a href="" class="brand">Connexions</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="dropdown">
+              <!-- Don't use th edata-toggle attr here because the
+              tools dropdown doesn't link to a tools index. -->
+              <a id="tools-selection" href="#"
+                 class="dropdown-toggle"
+                 role="button">Tools<b class="caret"></b></span>
+              <ul class="dropdown-menu" role="menu">
+                <li><a tabindex="-1" href="#">Import</a></li>
+                <li><a tabindex="-1" href="#">Preview ...</a></li>
+                <li><a tabindex="-1" href="#">Publish</a></li>
+                <li><a tabindex="-1" href="#">Sharing and Access Management</a></li>
+                <li>
+                  <a tabindex="-1" href="#">Metadata</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/support">Support</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <div role="main" class="container-fluid">
+    <div class="row-fluid">
+      <form>
+        <div class="span8">
+          <textarea id="editable-content" name="content">
+<h1>Meatloaf lovers rejoice</h1>
+<p>Meatloaf proident ham hock exercitation excepteur. Occaecat nostrud adipisicing bresaola, strip steak flank laborum irure eiusmod. Capicola reprehenderit culpa swine t-bone spare ribs. Quis elit ut, short loin in excepteur do non swine aliqua ground round.</p>
+          </textarea>
+        </div>
+        <div class="span4">
+          <h3>Help info and sidebar tools go here</h3>
+          <ul>
+            <li>What type of meat is best for children?</li>
+            <li>What does the mystery meat button do?</li>
+            <li>I need vegetables, where can I find these?</li>
+          </ul>
+        </div>
+        <div class="span12">
+          <button type="submit" name="submit"
+                  class="btn btn-primary">Submit</button>
+          <button type="button" name="cancel"
+                  class="btn">Cancel</button>
+        </div>
+      </form>
+    </div><!-- /row -->
+  </div><!-- /container -->
+</body>
 </html>
