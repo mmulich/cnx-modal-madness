@@ -8,6 +8,7 @@ requirejs.config({
     paths: {
         app: '../app',
         btstrp: 'bootstrap/js',
+        helpers: '../helpers',
     }
 });
 
