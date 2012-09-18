@@ -9,5 +9,6 @@ define(['mustache', 'jquery'], function (Mustache, $) {
 
     return {
         metadataForm: Renderer('js/templates/metadataForm.html'),
+        modalBase: Renderer('js/templates/modalBase.html'),
     };
 });
