@@ -9,6 +9,7 @@ requirejs.config({
         app: '../app',
         btstrp: 'bootstrap/js',
         helpers: '../helpers',
+        templates: '../templates',
     }
 });
 
