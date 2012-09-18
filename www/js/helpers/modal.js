@@ -14,7 +14,7 @@ define(['jquery', 'app/templates', 'app/views', 'app/datasource', 'btstrp/bootst
                 // Put the actions in the footer of the modal.
                 $
             }
-            this.$modal.filter('.modal-body').html($html);
+            $('#' + id).children('.modal-body').html($html);
         }
 
 
@@ -22,12 +22,11 @@ define(['jquery', 'app/templates', 'app/views', 'app/datasource', 'btstrp/bootst
         if (container === undefined) {
             container = 'body';
         }
-        this.$modal = $(templates.modalBase({id: id,
-                                             title: 'Edit metaata',
-                                             body: '<h1>Hello World</h1>',
-                                             actions: '<h3>Action buttons</h3>',
-                                            })).appendTo(container);
-
+        $modal = $(templates.modalBase({id: id,
+                                        title: 'Edit metaata',
+                                        body: '<h1>Cargando...</h1>',
+                                        actions: '<h3>Action buttons</h3>',
+                                       })).appendTo(container);
 
         $(opener).modal({show:false});
         $modal.on('show', $.proxy(this.render));

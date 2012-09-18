@@ -15,6 +15,6 @@ define(['jquery', 'app/datasource', 'helpers/modal', 'mustache',
 
     // -- Modal setup --
     var metadataModal = new modal.Modal('metadata-modal', 'metadata-link',
-                                        'metadataModal');
+                                        'metadataForm');
 
 });
