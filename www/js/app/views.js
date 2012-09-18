@@ -1,12 +1,13 @@
 define(['app/templates'], function (templates) {
 
-    // -- View controllers --
+    // -- View controlers --
     var metadataModal = function(data) {
-        var modalData = {
-            title: 'Edit Metadata',
-            body: templates.metadataForm(data),
-        }
-        var modal = templates.modalBase(modalData);
+        // var modalData = {
+        //     title: 'Edit Metadata',
+        //     body: templates.metadataForm(data),
+        // }
+        // var modal = templates.modal(modalData);
+        var modal = templates.metadataForm(data);
         $('#metadata-modal').html(modal);
     };
 
